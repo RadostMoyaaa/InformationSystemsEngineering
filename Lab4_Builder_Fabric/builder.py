@@ -114,9 +114,13 @@ class ManualBuilder(Builder):
     def setCodec(self, codec):
         self.document.setterCodec(codec)
 
-    def getResult(self):
+    def createFile(self):
         self.document.create_file()
         self.document.input_info()
+
+    def getResult(self):
+        # self.document.create_file()
+        # self.document.input_info()
         return self.document
 
 
@@ -137,15 +141,38 @@ class Director:
         self._builder.setBattery("3000Mah")
         self._builder.setRam("6gb")
 
+    def buildCreateFile(self):
+        self._builder.createFile()
+
+
+class Creator(ABC):
+    @abstractmethod
+    def createProduct(self):
+        pass
+
+
+class PlayerCreator(Creator):
+    def createProduct(self):
+        builder = PlayerBuilder()
+        director = Director()
+        director.setBuilder(builder)
+        director.buildPlayerCodec()
+        return director.getBuilder().getResult()
+
+class ManualCreator(Creator):
+    def createProduct(self):
+        builder = ManualBuilder()
+        director = Director()
+        director.setBuilder(builder)
+        director.buildPlayerCodec()
+        director.buildCreateFile()
+        return director.getBuilder().getResult()
+
+def client(creator):
+    creator.createProduct()
 
 if __name__ == "__main__":
-    builder = PlayerBuilder()
-    director = Director()
-    director.setBuilder(builder)
-    director.buildPlayerCodec()
-    # print(director.getBuilder().getResult().__dict__.items())
-
-    builder = ManualBuilder()
-    director.setBuilder(builder)
-    director.buildPlayerCodec()
-    director.getBuilder().getResult()
+    playerCreator = PlayerCreator()
+    manualCreator = ManualCreator()
+    client(playerCreator)
+    client(manualCreator)
