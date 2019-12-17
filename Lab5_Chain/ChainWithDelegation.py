@@ -94,6 +94,7 @@ if __name__ == "__main__":
 
     blueColor.set_next(pinkColor).set_next(greenColor)
 
+
     print("Chain: Blue > Pink > Green")
     client_code(blueColor)
     print("\n")

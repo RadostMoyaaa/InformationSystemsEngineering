@@ -157,7 +157,7 @@ class PlayerCreator(Creator):
         director = Director()
         director.setBuilder(builder)
         director.buildPlayerCodec()
-        return director.getBuilder().getResult()
+        print(director.getBuilder().getResult())
 
 class ManualCreator(Creator):
     def createProduct(self):

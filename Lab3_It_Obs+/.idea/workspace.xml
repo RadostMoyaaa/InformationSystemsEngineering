@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eba777c3-066a-47a6-bc9b-515b272ad814" name="Default Changelist" comment="" />
+    <list default="true" id="eba777c3-066a-47a6-bc9b-515b272ad814" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4_Builder_Fabric/builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4_Builder_Fabric/builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5_Chain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5_Chain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5_Chain/ChainWithDelegation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5_Chain/ChainWithDelegation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5_Делегат_Цепочка обязанностей-/задание.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +20,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1UTZQQlUOv5Y6qzdKYEVpsJ8596" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -167,9 +177,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="186" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1575390954413" />
-    <state x="390" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1575391097316">
+    <state x="390" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1576601539907">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="390" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1575391097316" />
+    <state x="390" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1576601539907" />
   </component>
 </project>
